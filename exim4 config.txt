@@ -1,0 +1,6 @@
+accept  hosts         = +relay_from_hosts
+control       = submission
+#require message = relay not permitted
+domains = +local_domains : +relay_to_domains
+
+require verify = recipient
